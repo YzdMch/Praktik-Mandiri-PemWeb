@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.profile-card {
+    max-width: 720px;
+    width: 100%;
+    background: #161b22;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    border: 1px solid #30363d;
+}
+
+/* Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(145deg, #238636, #2ea043);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid #3fb950;
+    box-shadow: 0 4px 12px rgba(46, 160, 67, 0.3);
+}
+
+.name-area h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.name-area .username {
+    font-size: 18px;
+    color: #8b949e;
+    margin-top: 4px;
+}
+
+/* Bio */
+.bio {
+    background: #21262d;
+    padding: 16px 20px;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    border-left: 5px solid #2ea043;
+    font-size: 16px;
+    color: #e6edf3;
+    font-style: italic;
+    box-shadow: inset 0 0 0 1px #30363d;
+}
+
+/* Status row */
+.status-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.status-item {
+    flex: 1;
+    min-width: 150px;
+    background: #21262d;
+    padding: 16px 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #3c444d;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.status-item:hover {
+    transform: translateY(-4px);
+    border-color: #2ea043;
+}
+
+.status-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8b949e;
+    margin-bottom: 8px;
+}
+
+.status-value {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.status-value.love {
+    color: #f97583;
+}
+
+.status-value.active {
+    color: #2ea043;
+}
+
+/* Tech section */
+.tech-section {
+    margin-bottom: 28px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #2ea043;
+    display: inline-block;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.badge {
+    background: #1f2937;
+    padding: 8px 18px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #d1d5db;
+    border: 1px solid #3c444d;
+    transition: all 0.2s;
+    cursor: default;
+}
+
+.badge:hover {
+    background: #2ea043;
+    color: white;
+    border-color: #2ea043;
+    transform: scale(1.02);
+}
+
+/* Contact section */
+.contact-section {
+    background: #21262d;
+    padding: 20px 24px;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    border: 1px solid #30363d;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-icon {
+    width: 28px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact-label {
+    color: #8b949e;
+    min-width: 50px;
+}
+
+.contact-value {
+    color: #e6edf3;
+    word-break: break-all;
+}
+
+.contact-value a {
+    color: #2ea043;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-value a:hover {
+    color: #3fb950;
+    text-decoration: underline;
+}
+
+/* Project link */
+.project-link {
+    background: #0d1117;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 1px solid #30363d;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.project-link a {
+    color: #2ea043;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 40px;
+    background: #1f2937;
+    transition: background 0.3s;
+}
+
+.project-link a:hover {
+    background: #2ea043;
+    color: white;
+}
+
+/* Footer */
+.footer-note {
+    margin-top: 28px;
+    text-align: center;
+    color: #6e7681;
+    font-size: 14px;
+    border-top: 1px solid #30363d;
+    padding-top: 18px;
+}
+
+.footer-note .love {
+    color: #f97583;
+}
