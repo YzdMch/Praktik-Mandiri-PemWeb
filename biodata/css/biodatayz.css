@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 14px;
+}
+
+/* Sub Judul */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section h3 {
+  font-weight: bold;
+}
+
+/* Flexbox */
+.personal-info,
+.education,
+.experience,
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* panjang flexbox */
+.personal-info div,
+.education div,
+.experience div,
+.social-media div {
+  width: 48%;
+}
+/* foto */
+.personal-info img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.social-media a i {
+  margin-right: 5px;
+}
