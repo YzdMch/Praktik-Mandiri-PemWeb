@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid black;
+  text-align: center;
+  width: 700px;
+  height: 300px;
+  margin: 100px auto;
+  padding: 6px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.pink {
+  background-color: rgb(203, 82, 102);
+}
+
+.brown {
+  background-color: rgb(165, 42, 42);
+}
+
+.cyan {
+  background-color: cyan;
+}
