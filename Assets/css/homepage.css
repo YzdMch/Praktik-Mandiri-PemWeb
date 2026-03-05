@@ -11,6 +11,14 @@
   --border-radius: 20px;
 }
 
+.dev-photo{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #ffd000;
+}
 * {
   margin: 0;
   padding: 0;
