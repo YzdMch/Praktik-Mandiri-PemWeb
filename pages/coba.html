@@ -1,364 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geeko Komputer • Form Estimasi Harga</title>
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Reuse homepage CSS -->
-    <link rel="stylesheet" href="Assets/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/Assets/css/style.css" />
+    <script src="/Assets/js/crud.js"></script>
+  </head>
+  <body>
     <!-- HEADER (sama seperti homepage, dengan link ke home) -->
     <header class="header">
-        <div class="container header-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="https://www.geekokomputer.com/wp-content/uploads/2021/07/Screen_Shot_2021-07-10_at_9.21.44_PM-removebg-preview-1.png" alt="Geeko Komputer Logo">
-                </a>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Layanan</a></li>
-                    <li><a href="index.html">Mengapa Kami</a></li>
-                    <li><a href="index.html">Kontak</a></li>
-                </ul>
-            </nav>
-            <div class="burger" id="burger">
-                <i class="fas fa-bars"></i>
-            </div>
+      <div class="container header-container">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="https://www.geekokomputer.com/wp-content/uploads/2021/07/Screen_Shot_2021-07-10_at_9.21.44_PM-removebg-preview-1.png"
+              alt="Geeko Komputer Logo"
+            />
+          </a>
         </div>
-        <div class="mobile-nav" id="mobileNav">
-            <ul>
-                <li><a href="homepage.html#home">Home</a></li>
-                <li><a href="homepage.html#services">Layanan</a></li>
-                <li><a href="homepage.html#why">Mengapa Kami</a></li>
-                <li><a href="homepage.html#contact">Kontak</a></li>
-            </ul>
+        <nav class="nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html">Layanan</a></li>
+            <li><a href="../index.html">Mengapa Kami</a></li>
+            <li><a href="../index.html">Kontak</a></li>
+          </ul>
+        </nav>
+        <div class="burger" id="burger">
+          <i class="fas fa-bars"></i>
         </div>
+      </div>
+      <div class="mobile-nav" id="mobileNav">
+        <ul>
+          <li><a href="homepage.html#home">Home</a></li>
+          <li><a href="homepage.html#services">Layanan</a></li>
+          <li><a href="homepage.html#why">Mengapa Kami</a></li>
+          <li><a href="homepage.html#contact">Kontak</a></li>
+        </ul>
+      </div>
     </header>
 
     <!-- FORM SECTION -->
     <section class="form-section">
-        <div class="container">
-            <div class="form-card">
-                <h1><i class="fas fa-calculator" style="color: var(--primary-yellow);"></i> Form Estimasi Biaya</h1>
-                <p class="subtitle">Isi data lengkap Anda, kami akan memberikan perkiraan biaya dan nomor tiket untuk pelacakan.</p>
+      <div class="container">
+        <div class="form-card">
+          <h1>
+            <i
+              class="fas fa-calculator"
+              style="color: var(--primary-yellow)"
+            ></i>
+            Form Estimasi Biaya
+          </h1>
+          <p class="subtitle">
+            Isi data lengkap Anda, kami akan memberikan perkiraan biaya dan
+            nomor tiket untuk pelacakan.
+          </p>
 
-                <form id="priceForm">
-                    <div class="form-grid">
-                        <!-- Nama Lengkap -->
-                        <div class="form-group full-width" id="group-nama">
-                            <label for="nama">Nama Lengkap <span style="color: #e53e3e;">*</span></label>
-                            <input type="text" id="nama" name="nama" placeholder="Contoh: John Doe" required>
-                            <div class="error-message">Nama harus diisi</div>
-                        </div>
+          <form id="priceForm">
+            <div class="form-grid">
+              <!-- Nama Lengkap -->
+              <div class="form-group full-width" id="group-nama">
+                <label for="nama"
+                  >Nama Lengkap <span style="color: #e53e3e">*</span></label
+                >
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Contoh: John Doe"
+                  required
+                />
+                <div class="error-message">Nama harus diisi</div>
+              </div>
 
-                        <!-- Email -->
-                        <div class="form-group" id="group-email">
-                            <label for="email">Email <span style="color: #e53e3e;">*</span></label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                            <div class="error-message">Email tidak valid</div>
-                        </div>
+              <!-- Email -->
+              <div class="form-group" id="group-email">
+                <label for="email"
+                  >Email <span style="color: #e53e3e">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+                <div class="error-message">Email tidak valid</div>
+              </div>
 
-                        <!-- No Telepon -->
-                        <div class="form-group" id="group-phone">
-                            <label for="phone">No. Telepon <span style="color: #e53e3e;">*</span></label>
-                            <input type="tel" id="phone" name="phone" placeholder="08123456789" required>
-                            <div class="error-message">Nomor telepon harus diisi</div>
-                        </div>
+              <!-- No Telepon -->
+              <div class="form-group" id="group-phone">
+                <label for="phone"
+                  >No. Telepon <span style="color: #e53e3e">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="08123456789"
+                  required
+                />
+                <div class="error-message">Nomor telepon harus diisi</div>
+              </div>
 
-                        <!-- Perangkat -->
-                        <div class="form-group" id="group-device">
-                            <label for="device">Perangkat <span style="color: #e53e3e;">*</span></label>
-                            <select id="device" name="device" required>
-                                <option value="">Pilih Perangkat</option>
-                                <option value="macbook">MacBook Pro / Air</option>
-                                <option value="windows">Windows Laptop</option>
-                                <option value="pc">Desktop PC</option>
-                                <option value="imac">iMac / Mac Desktop</option>
-                                <option value="other">Lainnya</option>
-                            </select>
-                            <div class="error-message">Pilih perangkat</div>
-                        </div>
+              <!-- Perangkat -->
+              <div class="form-group" id="group-device">
+                <label for="device"
+                  >Perangkat <span style="color: #e53e3e">*</span></label
+                >
+                <select id="device" name="device" required>
+                  <option value="">Pilih Perangkat</option>
+                  <option value="macbook">MacBook Pro / Air</option>
+                  <option value="windows">Windows Laptop</option>
+                  <option value="pc">Desktop PC</option>
+                  <option value="imac">iMac / Mac Desktop</option>
+                  <option value="other">Lainnya</option>
+                </select>
+                <div class="error-message">Pilih perangkat</div>
+              </div>
 
-                        <!-- Jenis Kerusakan -->
-                        <div class="form-group" id="group-issue">
-                            <label for="issue">Jenis Kerusakan <span style="color: #e53e3e;">*</span></label>
-                            <select id="issue" name="issue" required>
-                                <option value="">Pilih Kerusakan</option>
-                                <option value="lcd">Layar Pecah / LCD Rusak</option>
-                                <option value="battery">Baterai Kembang / Drop</option>
-                                <option value="ssd">Upgrade SSD</option>
-                                <option value="thermal">Thermal Paste / Cleaning</option>
-                                <option value="other">Lainnya</option>
-                            </select>
-                            <div class="error-message">Pilih jenis kerusakan</div>
-                        </div>
+              <!-- Jenis Kerusakan -->
+              <div class="form-group" id="group-issue">
+                <label for="issue"
+                  >Jenis Kerusakan <span style="color: #e53e3e">*</span></label
+                >
+                <select id="issue" name="issue" required>
+                  <option value="">Pilih Kerusakan</option>
+                  <option value="lcd">Layar Pecah / LCD Rusak</option>
+                  <option value="battery">Baterai Kembang / Drop</option>
+                  <option value="ssd">Upgrade SSD</option>
+                  <option value="thermal">Thermal Paste / Cleaning</option>
+                  <option value="other">Lainnya</option>
+                </select>
+                <div class="error-message">Pilih jenis kerusakan</div>
+              </div>
 
-                        <!-- Cabang Terdekat -->
-                        <div class="form-group" id="group-branch">
-                            <label for="branch">Cabang Terdekat <span style="color: #e53e3e;">*</span></label>
-                            <select id="branch" name="branch" required>
-                                <option value="">Pilih Cabang</option>
-                                <option value="jaksel">Jakarta Selatan (Head Office)</option>
-                                <option value="jakpus">Jakarta Pusat</option>
-                                <option value="jakbar">Jakarta Barat</option>
-                                <option value="jaktim">Jakarta Timur</option>
-                                <option value="jakut">Jakarta Utara</option>
-                                <option value="tangerang">Tangerang</option>
-                                <option value="bekasi">Bekasi</option>
-                                <option value="depok">Depok</option>
-                            </select>
-                            <div class="error-message">Pilih cabang</div>
-                        </div>
+              <!-- Cabang Terdekat -->
+              <div class="form-group" id="group-branch">
+                <label for="branch"
+                  >Cabang Terdekat <span style="color: #e53e3e">*</span></label
+                >
+                <select id="branch" name="branch" required>
+                  <option value="">Pilih Cabang</option>
+                  <option value="jaksel">Jakarta Selatan (Head Office)</option>
+                  <option value="jakpus">Jakarta Pusat</option>
+                  <option value="jakbar">Jakarta Barat</option>
+                  <option value="jaktim">Jakarta Timur</option>
+                  <option value="jakut">Jakarta Utara</option>
+                  <option value="tangerang">Tangerang</option>
+                  <option value="bekasi">Bekasi</option>
+                  <option value="depok">Depok</option>
+                </select>
+                <div class="error-message">Pilih cabang</div>
+              </div>
 
-                        <!-- Deskripsi Keluhan (full width) -->
-                        <div class="form-group full-width" id="group-description">
-                            <label for="description">Deskripsi Keluhan <span style="color: #e53e3e;">*</span></label>
-                            <textarea id="description" name="description" placeholder="Jelaskan detail kerusakan... (contoh: layar muncul garis, baterai cepat habis)" required></textarea>
-                            <div class="error-message">Deskripsi harus diisi</div>
-                        </div>
+              <!-- Deskripsi Keluhan (full width) -->
+              <div class="form-group full-width" id="group-description">
+                <label for="description"
+                  >Deskripsi Keluhan
+                  <span style="color: #e53e3e">*</span></label
+                >
+                <textarea
+                  id="description"
+                  name="description"
+                  placeholder="Jelaskan detail kerusakan... (contoh: layar muncul garis, baterai cepat habis)"
+                  required
+                ></textarea>
+                <div class="error-message">Deskripsi harus diisi</div>
+              </div>
 
-                        <!-- Upload Foto (opsional, full width) -->
-                        <div class="form-group full-width">
-                            <label for="photo">Upload Foto Kerusakan (opsional)</label>
-                            <input type="file" id="photo" name="photo" accept="image/*">
-                        </div>
-                    </div>
-
-                    <button type="submit" class="submit-btn" id="submitBtn">
-                        <span>Dapatkan Estimasi</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
-                </form>
-
-                <!-- HASIL ESTIMASI -->
-                <div class="result-card" id="resultCard">
-                    <h3><i class="fas fa-check-circle" style="color: #22c55e;"></i> Estimasi Diterima!</h3>
-                    <div class="ticket">
-                        <strong>Nomor Tiket:</strong> <span id="ticketNumber"></span><br>
-                        <small>Simpan nomor ini untuk melacak status perbaikan.</small>
-                    </div>
-                    <p><strong>Perangkat:</strong> <span id="resultDevice"></span></p>
-                    <p><strong>Kerusakan:</strong> <span id="resultIssue"></span></p>
-                    <p><strong>Cabang:</strong> <span id="resultBranch"></span></p>
-                    <div class="price-estimate" id="resultPrice"></div>
-                    <p style="color: #666;">Kami akan segera menghubungi Anda via WhatsApp/email untuk konfirmasi.</p>
-                    <button onclick="resetForm()" class="btn btn-secondary" style="margin-top: 1rem;"><i class="fas fa-redo"></i> Ajukan Lagi</button>
-                </div>
+              <!-- Upload Foto (opsional, full width) -->
+              <div class="form-group full-width">
+                <label for="photo">Upload Foto Kerusakan (opsional)</label>
+                <input type="file" id="photo" name="photo" accept="image/*" />
+              </div>
             </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <span>Dapatkan Estimasi</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+
+          <!-- HASIL ESTIMASI -->
+          <div class="result-card" id="resultCard">
+            <h3>
+              <i class="fas fa-check-circle" style="color: #22c55e"></i>
+              Estimasi Diterima!
+            </h3>
+            <div class="ticket">
+              <strong>Nomor Tiket:</strong> <span id="ticketNumber"></span
+              ><br />
+              <small>Simpan nomor ini untuk melacak status perbaikan.</small>
+            </div>
+            <p><strong>Perangkat:</strong> <span id="resultDevice"></span></p>
+            <p><strong>Kerusakan:</strong> <span id="resultIssue"></span></p>
+            <p><strong>Cabang:</strong> <span id="resultBranch"></span></p>
+            <div class="price-estimate" id="resultPrice"></div>
+            <p style="color: #666">
+              Kami akan segera menghubungi Anda via WhatsApp/email untuk
+              konfirmasi.
+            </p>
+            <button
+              onclick="resetForm()"
+              class="btn btn-secondary"
+              style="margin-top: 1rem"
+            >
+              <i class="fas fa-redo"></i> Ajukan Lagi
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- FOOTER (sederhana) -->
     <footer class="footer">
-        <div class="container footer-container">
-            <p>© 2024 Geeko Komputer. All rights reserved. Transparansi Harga Reparasi Terpercaya.</p>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-        </div>
+      <div class="container footer-container">
+        <p>
+          © 2024 Geeko Komputer. All rights reserved. Transparansi Harga
+          Reparasi Terpercaya.
+        </p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
     </footer>
-
-    <script>
-        // Data estimasi harga (simulasi)
-        const priceMatrix = {
-            macbook: { lcd: [800000, 1200000], battery: [450000, 600000], ssd: [350000, 500000], thermal: [150000, 200000], other: [200000, 500000] },
-            windows: { lcd: [500000, 800000], battery: [300000, 450000], ssd: [250000, 400000], thermal: [100000, 150000], other: [150000, 400000] },
-            pc: { lcd: [600000, 1000000], battery: [400000, 550000], ssd: [300000, 450000], thermal: [120000, 180000], other: [180000, 450000] },
-            imac: { lcd: [1500000, 2500000], battery: [800000, 1200000], ssd: [500000, 800000], thermal: [250000, 350000], other: [300000, 700000] },
-            other: { lcd: [400000, 700000], battery: [250000, 400000], ssd: [200000, 350000], thermal: [100000, 150000], other: [100000, 300000] }
-        };
-
-        const branchNames = {
-            jaksel: "Jakarta Selatan (Head Office)",
-            jakpus: "Jakarta Pusat",
-            jakbar: "Jakarta Barat",
-            jaktim: "Jakarta Timur",
-            jakut: "Jakarta Utara",
-            tangerang: "Tangerang",
-            bekasi: "Bekasi",
-            depok: "Depok"
-        };
-
-        const deviceNames = {
-            macbook: "MacBook Pro / Air",
-            windows: "Windows Laptop",
-            pc: "Desktop PC",
-            imac: "iMac / Mac Desktop",
-            other: "Lainnya"
-        };
-
-        const issueNames = {
-            lcd: "Layar Pecah / LCD Rusak",
-            battery: "Baterai Kembang / Drop",
-            ssd: "Upgrade SSD",
-            thermal: "Thermal Paste / Cleaning",
-            other: "Lainnya"
-        };
-
-        // Form elements
-        const form = document.getElementById('priceForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const resultCard = document.getElementById('resultCard');
-        const ticketSpan = document.getElementById('ticketNumber');
-        const resultDevice = document.getElementById('resultDevice');
-        const resultIssue = document.getElementById('resultIssue');
-        const resultBranch = document.getElementById('resultBranch');
-        const resultPrice = document.getElementById('resultPrice');
-
-        // Validation helper
-        function validateField(fieldId, groupId) {
-            const field = document.getElementById(fieldId);
-            const group = document.getElementById(groupId);
-            const value = field.value.trim();
-            let isValid = true;
-
-            if (fieldId === 'email') {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                isValid = emailRegex.test(value);
-            } else if (fieldId === 'phone') {
-                isValid = value.length >= 8 && /^[0-9]+$/.test(value.replace(/[-\s]/g, ''));
-            } else if (fieldId === 'device' || fieldId === 'issue' || fieldId === 'branch') {
-                isValid = value !== '';
-            } else {
-                isValid = value !== '';
-            }
-
-            if (!isValid) {
-                group.classList.add('error');
-            } else {
-                group.classList.remove('error');
-            }
-            return isValid;
-        }
-
-        // Real-time validation on blur
-        document.getElementById('nama').addEventListener('blur', () => validateField('nama', 'group-nama'));
-        document.getElementById('email').addEventListener('blur', () => validateField('email', 'group-email'));
-        document.getElementById('phone').addEventListener('blur', () => validateField('phone', 'group-phone'));
-        document.getElementById('device').addEventListener('change', () => validateField('device', 'group-device'));
-        document.getElementById('issue').addEventListener('change', () => validateField('issue', 'group-issue'));
-        document.getElementById('branch').addEventListener('change', () => validateField('branch', 'group-branch'));
-        document.getElementById('description').addEventListener('blur', () => validateField('description', 'group-description'));
-
-        // Generate random ticket
-        function generateTicket() {
-            return 'GEEK-' + Math.random().toString(36).substring(2, 10).toUpperCase();
-        }
-
-        // Get price range
-        function getPriceRange(device, issue) {
-            if (!priceMatrix[device] || !priceMatrix[device][issue]) return [0, 0];
-            return priceMatrix[device][issue];
-        }
-
-        // Format rupiah
-        function formatRupiah(amount) {
-            return 'Rp ' + amount.toFixed(0).replace(/\d(?=(\d{3})+$)/g, '$&.');
-        }
-
-        // Reset form
-        window.resetForm = function() {
-            form.reset();
-            resultCard.classList.remove('show');
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = `<span>Dapatkan Estimasi</span> <i class="fas fa-arrow-right"></i>`;
-            // remove all error classes
-            document.querySelectorAll('.form-group').forEach(g => g.classList.remove('error'));
-        };
-
-        // Handle form submit
-        form.addEventListener('submit', async function(e) {
-            e.preventDefault();
-
-            // Validate all fields
-            const validNama = validateField('nama', 'group-nama');
-            const validEmail = validateField('email', 'group-email');
-            const validPhone = validateField('phone', 'group-phone');
-            const validDevice = validateField('device', 'group-device');
-            const validIssue = validateField('issue', 'group-issue');
-            const validBranch = validateField('branch', 'group-branch');
-            const validDesc = validateField('description', 'group-description');
-
-            if (!validNama || !validEmail || !validPhone || !validDevice || !validIssue || !validBranch || !validDesc) {
-                return;
-            }
-
-            // Disable button and show loading
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = `<span class="loader"></span> Memproses...`;
-
-            // Simulate network delay
-            setTimeout(() => {
-                // Get values
-                const nama = document.getElementById('nama').value;
-                const email = document.getElementById('email').value;
-                const phone = document.getElementById('phone').value;
-                const device = document.getElementById('device').value;
-                const issue = document.getElementById('issue').value;
-                const branch = document.getElementById('branch').value;
-                const description = document.getElementById('description').value;
-
-                // Generate ticket
-                const ticket = generateTicket();
-
-                // Get price range
-                const [min, max] = getPriceRange(device, issue);
-                const priceText = (min === 0 && max === 0) 
-                    ? 'Estimasi akan diinformasikan setelah teknisi memeriksa'
-                    : `${formatRupiah(min)} - ${formatRupiah(max)}`;
-
-                // Fill result card
-                ticketSpan.textContent = ticket;
-                resultDevice.textContent = deviceNames[device] || device;
-                resultIssue.textContent = issueNames[issue] || issue;
-                resultBranch.textContent = branchNames[branch] || branch;
-                resultPrice.textContent = priceText;
-
-                // Show result
-                resultCard.classList.add('show');
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = `<span>Dapatkan Estimasi</span> <i class="fas fa-arrow-right"></i>`;
-
-                // Optional: scroll to result
-                resultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-                // Here you could also send data to server using fetch
-                console.log({
-                    nama, email, phone, device, issue, branch, description, ticket
-                });
-
-            }, 1500); // simulate 1.5s loading
-        });
-
-        // Burger menu (copy from homepage)
-        const burger = document.getElementById('burger');
-        const mobileNav = document.getElementById('mobileNav');
-        burger.addEventListener('click', () => {
-            mobileNav.classList.toggle('active');
-            const icon = burger.querySelector('i');
-            if (mobileNav.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
-
-        const mobileLinks = mobileNav.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileNav.classList.remove('active');
-                const icon = burger.querySelector('i');
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            });
-        });
-    </script>
-</body>
+  </body>
 </html>
