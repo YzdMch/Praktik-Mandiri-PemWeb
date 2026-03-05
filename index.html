@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="Assets/css/homepage.css" />
+    <script src="/Assets/js/script.js"></script>
   </head>
   <body>
     <!-- WELCOME OVERLAY dengan LOGO GEEKO -->
@@ -214,51 +215,5 @@
         <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
       </div>
     </footer>
-
-    <script>
-      // Welcome overlay fade out
-      setTimeout(() => {
-        const overlay = document.getElementById("welcomeOverlay");
-        if (overlay) {
-          overlay.classList.add("fade-out");
-          setTimeout(() => {
-            overlay.style.display = "none";
-          }, 800);
-        }
-      }, 1500);
-
-      // Munculkan ribbon setelah 1 detik
-      setTimeout(() => {
-        const ribbon = document.getElementById("topRibbon");
-        if (ribbon) {
-          ribbon.classList.add("show");
-        }
-      }, 1000);
-
-      // Burger menu
-      const burger = document.getElementById("burger");
-      const mobileNav = document.getElementById("mobileNav");
-      burger.addEventListener("click", () => {
-        mobileNav.classList.toggle("active");
-        const icon = burger.querySelector("i");
-        if (mobileNav.classList.contains("active")) {
-          icon.classList.remove("fa-bars");
-          icon.classList.add("fa-times");
-        } else {
-          icon.classList.remove("fa-times");
-          icon.classList.add("fa-bars");
-        }
-      });
-
-      const mobileLinks = mobileNav.querySelectorAll("a");
-      mobileLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileNav.classList.remove("active");
-          const icon = burger.querySelector("i");
-          icon.classList.remove("fa-times");
-          icon.classList.add("fa-bars");
-        });
-      });
-    </script>
   </body>
 </html>
