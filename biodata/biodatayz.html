@@ -1,58 +1,186 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biodata Diri</title>
+    <title>Moch Yazid Nur Rohman - Biodata</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="/biodata/css/biodatayz.css" />
+    <link rel="stylesheet" href="css/biodatayz.css" />
   </head>
   <body>
     <div class="container">
-      <!-- Header CV -->
+      <!-- Header dengan foto profil bulat -->
       <div class="header">
-        <h1>BIODATA DIRI</h1>
-        <p>Biodata singkat</p>
-      </div>
-      <!-- Biodata dan Foto -->
-      <div class="section personal-info">
-        <div>
-          <p><strong>Nama:</strong> Moch Yazid Nur Rohman</p>
-          <p><strong>Tempat, Tanggal Lahir:</strong> Mojokerto, April 2006</p>
-          <p><strong>Alamat:</strong> Kec. Ngoro, Kab. Mojokerto</p>
-          <p><strong>Email:</strong> 24082010151@student.upnjatim.ac.id</p>
-          <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
-          <p><strong>No. Telepon:</strong> +62 812 3344 9897</p>
-          <p><strong>Kewarganegaraan:</strong> Indonesia</p>
-          <p><strong>Agama:</strong> Islam</p>
-          <p><strong>Usia:</strong> 19</p>
-        </div>
-        <div style="text-align: end">
+        <div class="profile-image-container">
           <img
             src="/Assets/images/biodatayz.jpeg"
-            alt="Moch Yazid Nur Rohman Picture"
-            class="profile-pic"
+            alt="Moch Yazid Nur Rohman"
+            class="profile-image"
           />
         </div>
+        <div class="header-content">
+          <h1>Moch Yazid Nur Rohman</h1>
+          <p class="subtitle">Mahasiswa | Calon Developer</p>
+        </div>
       </div>
-      <!-- Sosmed -->
-      <div class="section social-media">
-        <div>
-          <h2>SOCIAL MEDIA:</h2>
-          <div>
-            <a href="https://www.instagram.com/yzd_mch"
-              ><i class="fab fa-instagram"></i> @yzd_mch
-            </a>
-            <a href="https://www.facebook.com/yazid.mochammad.3"
-              ><i class="fab fa-facebook"></i> Yazid Mochammad
-            </a>
-            <a href="https://github.com/YzdMch"
-              ><i class="fab fa-github"></i> YzdMch
-            </a>
+
+      <!-- About Section -->
+      <div class="about-section">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="about-text">
+          Mahasiswa yang minat dalam perkembangan dari teknologi. Memiliki
+          semangat belajar yang tinggi dan kemampuan adaptasi yang baik.
+        </p>
+      </div>
+
+      <!-- Informasi Pribadi -->
+      <div class="info-section">
+        <h2 class="section-title">Informasi Pribadi</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="info-content">
+              <span class="info-label">Nama Lengkap</span>
+              <span class="info-value">Moch Yazid Nur Rohman</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="info-content">
+              <span class="info-label">Tempat, Tgl Lahir</span>
+              <span class="info-value">Mojokerto, April 2006</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <span class="info-label">Alamat</span>
+              <span class="info-value">Kec. Ngoro, Kab. Mojokerto</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <span class="info-label">Email</span>
+              <span class="info-value">24082010151@student.upnjatim.ac.id</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info-content">
+              <span class="info-label">No. Telepon</span>
+              <span class="info-value">+62 812 3344 9897</span>
+            </div>
           </div>
         </div>
+      </div>
+
+      <!-- RIWAYAT PENDIDIKAN -->
+      <div class="education-section">
+        <h2 class="section-title">Riwayat Pendidikan</h2>
+
+        <div class="education-grid">
+          <!-- SD -->
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="education-content">
+              <span class="education-level">SD</span>
+              <h3 class="education-place">SDN Kembangsri</h3>
+              <!-- <p class="education-year">2008 - 2014</p> -->
+            </div>
+          </div>
+
+          <!-- SMP -->
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="education-content">
+              <span class="education-level">SMP</span>
+              <h3 class="education-place">SMPN 1 Ngoro</h3>
+              <!-- <p class="education-year">2014 - 2017</p> -->
+            </div>
+          </div>
+
+          <!-- SMA -->
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-content">
+              <span class="education-level">SMA</span>
+              <h3 class="education-place">SMKN 1 Pungging</h3>
+              <!-- <p class="education-year">2017 - 2020</p> -->
+            </div>
+          </div>
+
+          <!-- KULIAH -->
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="education-content">
+              <span class="education-level">KULIAH</span>
+              <h3 class="education-place">UPN "VETERAN" JAWA TIMUR</h3>
+              <!-- <p class="education-year">2024 - Sekarang</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="social-section">
+        <h2 class="section-title">Kontak Saya</h2>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/yzd_mch"
+            class="social-link instagram"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+            <span>@yzd_mch</span>
+          </a>
+          <a
+            href="https://www.facebook.com/yazid.mochammad.3"
+            class="social-link facebook"
+            target="_blank"
+          >
+            <i class="fab fa-facebook"></i>
+            <span>Yazid Mochammad</span>
+          </a>
+          <a
+            href="https://github.com/YzdMch"
+            class="social-link github"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+            <span>YzdMch</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2024 Moch Yazid Nur Rohman. All rights reserved.</p>
       </div>
     </div>
   </body>
